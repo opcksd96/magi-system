@@ -37,3 +37,5 @@ scripts/secrets/
 .system_generated/
 uploads/
 temp/
+.playwright-mcp/
+downloaded_files/
