@@ -1,0 +1,11 @@
+typer
+rich
+python-dotenv
+openai
+ollama
+mcp
+seleniumbase
+pydantic
+fastapi
+uvicorn
+httpx

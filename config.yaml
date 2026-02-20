@@ -1,0 +1,19 @@
+active_profile: default
+profiles:
+  default:
+    api:
+      host: 0.0.0.0
+      port: 8000
+      timeout: 60
+    magi:
+      installation: NERV HQ
+      name: MAGI-3
+      security:
+        encryption: AES-256-GCM
+        protocol: BEARER
+      ui:
+        blink_diagnostic: true
+        language: jp
+        log_limit: 1000
+        theme: nerv-classic
+version: 2.1.0

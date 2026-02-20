@@ -1,0 +1,24 @@
+# MAGI Advisor Model Definitions
+[models.melchior]
+id = "MELCHIOR-1"
+provider = "ollama"
+model = "lfm2.5-thinking:latest"
+persona = "Scientist"
+
+[models.balthasar]
+id = "BALTHASAR-2"
+provider = "ollama"
+model = "lfm2.5-thinking:latest"
+persona = "Mother"
+
+[models.casper]
+id = "CASPER-3"
+provider = "ollama"
+model = "lfm2.5-thinking:latest"
+persona = "Woman"
+
+[judge]
+id = "JUDGE-CASPER"
+provider = "ollama"
+model = "lfm2.5-thinking:latest"
+strategy = "heavy"

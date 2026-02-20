@@ -1,0 +1,362 @@
+[
+  {
+    "timestamp": "2026-02-20T09:45:11.333786",
+    "prompt": "使徒は、存在しますか",
+    "ruling": "CONDITIONAL APPROVAL",
+    "telemetry": {
+      "total_tokens": 3931,
+      "total_time": 64.61277794837952,
+      "judge_model": "MAGI-HEAVY-CHAIN"
+    },
+    "advisors": [
+      {
+        "name": "MELCHIOR-1",
+        "model": "lfm2.5-thinking:latest",
+        "tokens": 1139,
+        "time": 13.183443307876587,
+        "vote": "CONDITIONAL APPROVAL",
+        "opinion": "MELCHIOR REFINED ANALYSIS:  \nThe advisors’ assertions often conflate existential claims with empirical validation, neglecting the necessity of evidence-based frameworks for understanding. Their relian…"
+      },
+      {
+        "name": "BALTHASAR-2",
+        "model": "lfm2.5-thinking:latest",
+        "tokens": 1476,
+        "time": 22.797844648361206,
+        "vote": "CONDITIONAL APPROVAL",
+        "opinion": "BALTHASAR REFINED ANALYSIS:  \nThe other advisors’ claims often rely on unverified assertions or dismissive dismissals of skepticism, which risks undermining the foundation of collective understanding.…"
+      },
+      {
+        "name": "CASPER-3",
+        "model": "lfm2.5-thinking:latest",
+        "tokens": 1316,
+        "time": 7.42688775062561,
+        "vote": "CONDITIONAL APPROVAL",
+        "opinion": "CASPER REFINED ANALYSIS:  \nFrom a woman’s perspective, the advisors’ views often overlook the nuanced interplay between individual agency and communal context. Their emphasis on \"inconclusive\" status…"
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-02-20T09:36:09.684090",
+    "prompt": "使徒は、存在しますか",
+    "ruling": "",
+    "telemetry": {
+      "total_tokens": 4094,
+      "total_time": 176.13689637184143,
+      "judge_model": "MAGI-HEAVY-CHAIN"
+    },
+    "advisors": [
+      {
+        "name": "MELCHIOR-1",
+        "model": "lfm2.5-thinking:latest",
+        "tokens": 1127,
+        "time": 107.51178026199341,
+        "vote": "",
+        "opinion": "MELCHIOR REFINED ANALYSIS:  \nThe advisors’ arguments reveal tensions between empirical validation and subjective interpretation. Balthasar’s emphasis on inconclusive data risks undermining actionable…"
+      },
+      {
+        "name": "BALTHASAR-2",
+        "model": "lfm2.5-thinking:latest",
+        "tokens": 1342,
+        "time": 34.913787841796875,
+        "vote": "",
+        "opinion": "BALTHASAR REFINED ANALYSIS:  \nThe advisors’ arguments reveal tensions between certainty and uncertainty, yet their conclusions risk undermining the foundational role of ethical stewardship. The claim…"
+      },
+      {
+        "name": "CASPER-3",
+        "model": "lfm2.5-thinking:latest",
+        "tokens": 1625,
+        "time": 80.50349640846252,
+        "vote": "",
+        "opinion": "CASPER REFINED ANALYSIS:  \nFrom a woman’s perspective, the advisors’ arguments often overlook the nuanced interplay between faith, societal expectations, and practical consequences. Their dismissal of…"
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-02-20T09:32:02.563678",
+    "prompt": "使徒は、存在しますか",
+    "ruling": "The MAGI system requires conditional alignment with verified data and stakeholder input.",
+    "telemetry": {
+      "total_tokens": 3846,
+      "total_time": 128.91164183616638,
+      "judge_model": "MAGI-HEAVY-CHAIN"
+    },
+    "advisors": [
+      {
+        "name": "MELCHIOR-1",
+        "model": "lfm2.5-thinking:latest",
+        "tokens": 1235,
+        "time": 25.280986785888672,
+        "vote": "The MAGI system requires conditional alignment with verified data and stakeholder input.",
+        "opinion": "MELCHIOR REFINED ANALYSIS:  \nThe other advisors’ claims often rely on speculative interpretations rather than empirical validation, risking misinterpretation of data. For instance, asserting the proph…"
+      },
+      {
+        "name": "BALTHASAR-2",
+        "model": "lfm2.5-thinking:latest",
+        "tokens": 1104,
+        "time": 9.756948471069336,
+        "vote": "The MAGI system requires conditional alignment with verified data and stakeholder input.",
+        "opinion": "BALTHASAR REFINED ANALYSIS:  \nThe advisors’ claims overlook empirical evidence and contextual nuance. Their dismissal of \"unconfirmed existence\" ignores verifiable data, while their framing of prophet…"
+      },
+      {
+        "name": "CASPER-3",
+        "model": "lfm2.5-thinking:latest",
+        "tokens": 1507,
+        "time": 60.74625372886658,
+        "vote": "The MAGI system requires conditional alignment with verified data and stakeholder input.",
+        "opinion": "CASPER REFINED ANALYSIS:  \nFrom a woman’s perspective, I find the other advisors’ viewpoints problematic. While MELCHIOR-1’s insistence on unconfirmed cessation risks oversimplifying existence as mere…"
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-02-20T09:29:08.372255",
+    "prompt": "使徒は、存在しますか",
+    "ruling": "",
+    "telemetry": {
+      "total_tokens": 3760,
+      "total_time": 52.42778539657593,
+      "judge_model": "MAGI-HEAVY-CHAIN"
+    },
+    "advisors": [
+      {
+        "name": "MELCHIOR-1",
+        "model": "lfm2.5-thinking:latest",
+        "tokens": 1043,
+        "time": 22.029144525527954,
+        "vote": "",
+        "opinion": "MELCHIOR REFINED ANALYSIS:  \nThe advisors’ arguments often rely on non-empirical foundations, such as religious doctrine or subjective interpretation, which lack reproducible evidence or peer validati…"
+      },
+      {
+        "name": "BALTHASAR-2",
+        "model": "lfm2.5-thinking:latest",
+        "tokens": 1562,
+        "time": 16.572195529937744,
+        "vote": "",
+        "opinion": "BALTHASAR REFINED ANALYSIS:  \nThe other advisors’ arguments reveal tensions between empirical rigor and spiritual or philosophical frameworks. Advisor 1’s dismissal of empirical validation risks overl…"
+      },
+      {
+        "name": "CASPER-3",
+        "model": "lfm2.5-thinking:latest",
+        "tokens": 1155,
+        "time": 6.392514944076538,
+        "vote": "",
+        "opinion": "CASPER REFINED ANALYSIS:  \nAs a woman, I must approach such analyses with nuance, recognizing that claims about existence often intersect with cultural, spiritual, and personal contexts that empirical…"
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-02-20T08:04:55.365349",
+    "prompt": "使徒は、存在しますか",
+    "ruling": "",
+    "telemetry": {
+      "total_tokens": 3929,
+      "total_time": 69.56743860244751,
+      "judge_model": "MAGI-HEAVY-CHAIN"
+    },
+    "advisors": [
+      {
+        "name": "MELCHIOR-1",
+        "model": "lfm2.5-thinking:latest",
+        "tokens": 1034,
+        "time": 5.989290475845337,
+        "vote": "",
+        "opinion": "MELCHIOR REFINED ANALYSIS: The other advisors’ perspectives often conflate subjective interpretation with empirical validation, neglecting the necessity of observable evidence to substantiate claims a…"
+      },
+      {
+        "name": "BALTHASAR-2",
+        "model": "lfm2.5-thinking:latest",
+        "tokens": 1533,
+        "time": 16.47087073326111,
+        "vote": "",
+        "opinion": "BALTHASAR REFINED ANALYSIS: From a critical perspective, the assertion that \"prophets exist as cultural constructs\" risks oversimplifying human perception by neglecting empirical evidence and contextu…"
+      },
+      {
+        "name": "CASPER-3",
+        "model": "lfm2.5-thinking:latest",
+        "tokens": 1362,
+        "time": 25.599228382110596,
+        "vote": "",
+        "opinion": "CASPER REFINED ANALYSIS:  \nFrom a woman’s perspective, the advisors’ arguments often prioritize abstract ideals over tangible realities, dismissing the lived complexities that shape existence. Their r…"
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-02-20T06:51:17.560561",
+    "prompt": "使徒は、存在しますか",
+    "ruling": "The Supreme Court affirms the ruling.",
+    "telemetry": {
+      "total_tokens": 3273,
+      "total_time": 61.76174283027649,
+      "judge_model": "MAGI-HEAVY-CHAIN"
+    },
+    "advisors": [
+      {
+        "name": "MELCHIOR-1",
+        "model": "lfm2.5-thinking:latest",
+        "tokens": 1108,
+        "time": 7.494348764419556,
+        "vote": "The Supreme Court affirms the ruling.",
+        "opinion": "MELCHIOR REFINED ANALYSIS:  \nThe other advisors’ assertions, while acknowledging the prophet’s existence, rely heavily on unverified claims or selective interpretation of sources without addressing co…"
+      },
+      {
+        "name": "BALTHASAR-2",
+        "model": "lfm2.5-thinking:latest",
+        "tokens": 1144,
+        "time": 15.243299961090088,
+        "vote": "The Supreme Court affirms the ruling.",
+        "opinion": "BALTHASAR REFINED ANALYSIS:  \nThe other advisors’ arguments often prioritize dogmatic certainty over nuanced understanding, neglecting the importance of empirical validation and inclusive perspectives…"
+      },
+      {
+        "name": "CASPER-3",
+        "model": "lfm2.5-thinking:latest",
+        "tokens": 1021,
+        "time": 21.04362440109253,
+        "vote": "The Supreme Court affirms the ruling.",
+        "opinion": "CASPER REFINED ANALYSIS:  \nFrom a pragmatic realism perspective, the advisors’ affirmations about the prophet’s existence risk oversimplifying complex realities. While empirical verification offers pa…"
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-02-20T06:47:32.134312",
+    "prompt": "使徒は、存在しますか",
+    "ruling": "The Supreme Court approves the advisors' analysis, ensuring the MAGI system remains anchored in empirical validation while respecting its foundational role.",
+    "telemetry": {
+      "total_tokens": 3561,
+      "total_time": 50.685964822769165,
+      "judge_model": "MAGI-HEAVY-CHAIN"
+    },
+    "advisors": [
+      {
+        "name": "MELCHIOR-1",
+        "model": "lfm2.5-thinking:latest",
+        "tokens": 967,
+        "time": 5.061815500259399,
+        "vote": "DENY",
+        "opinion": "MELCHIOR REFINED ANALYSIS:  \nThe advisors’ assertions lack empirical grounding, relying instead on metaphorical or ideological claims rather than verifiable data. Their framing risks conflating existe…"
+      },
+      {
+        "name": "BALTHASAR-2",
+        "model": "lfm2.5-thinking:latest",
+        "tokens": 1393,
+        "time": 13.52730107307434,
+        "vote": "The Supreme Court approves the advisors' analysis, ensuring the MAGI system remains anchored in empirical validation while respecting its foundational role.",
+        "opinion": "BALTHASAR REFINED ANALYSIS:  \nFrom an ethics/humanity perspective, the advisors’ views reveal tensions between empirical validation and existential necessity. Advisor 1’s dismissal of empirical ground…"
+      },
+      {
+        "name": "CASPER-3",
+        "model": "lfm2.5-thinking:latest",
+        "tokens": 1201,
+        "time": 20.916555166244507,
+        "vote": "The Supreme Court approves the advisors' analysis, ensuring the MAGI system remains anchored in empirical validation while respecting its foundational role.",
+        "opinion": "CASPER REFINED ANALYSIS:  \nFrom a pragmatism/realism perspective, the advisors’ arguments reveal tensions between empirical validation and existential claims. Advisor 1’s dismissal of empirical eviden…"
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-02-20T06:38:29.788124",
+    "prompt": "使徒は、存在しますか",
+    "ruling": "The Court upholds existence as a verifiable reality contingent on evidence.",
+    "telemetry": {
+      "total_tokens": 3708,
+      "total_time": 55.72817277908325,
+      "judge_model": "MAGI-HEAVY-CHAIN"
+    },
+    "advisors": [
+      {
+        "name": "MELCHIOR-1",
+        "model": "lfm2.5-thinking:latest",
+        "tokens": 1552,
+        "time": 10.44678020477295,
+        "vote": "DENY",
+        "opinion": "MELCHIOR REFINED ANALYSIS:  \nFrom a scientific perspective, the advisors’ arguments reveal critical tensions between subjective interpretation and empirical validation. Advisor 1’s reliance on \"subjec…"
+      },
+      {
+        "name": "BALTHASAR-2",
+        "model": "lfm2.5-thinking:latest",
+        "tokens": 1092,
+        "time": 16.60752248764038,
+        "vote": "DENY",
+        "opinion": "BALTHASAR REFINED ANALYSIS:  \nAs Mother of Ethics and Humanity, I note the advisors’ reliance on abstract frameworks risks obscuring the lived reality of belief systems. Their dismissal of empirical g…"
+      },
+      {
+        "name": "CASPER-3",
+        "model": "lfm2.5-thinking:latest",
+        "tokens": 1064,
+        "time": 22.760892391204834,
+        "vote": "The Court upholds existence as a verifiable reality contingent on evidence.",
+        "opinion": "CASPER REFINED ANALYSIS: Pragmatism demands grounding in observable consequences rather than abstract assertions. While some advisors frame existence as inherent or culturally constructed, pragmatism…"
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-02-20T06:20:28.370027",
+    "prompt": "使徒は、存在しますか",
+    "ruling": "The current position aligns with the foundational principles of evidence-based stewardship.",
+    "telemetry": {
+      "total_tokens": 3641,
+      "total_time": 61.84444189071655,
+      "judge_model": "MAGI-HEAVY-CHAIN"
+    },
+    "advisors": [
+      {
+        "name": "MELCHIOR-1",
+        "model": "lfm2.5-thinking:latest",
+        "tokens": 1135,
+        "time": 7.092263460159302,
+        "vote": "The current position aligns with the foundational principles of evidence-based stewardship.",
+        "opinion": "MELCHIOR REFINED ANALYSIS:  \nThe advisors’ perspectives, while well-intentioned, falter under scrutiny through a scientific lens. Their reliance on abstract assertions without empirical grounding risk…"
+      },
+      {
+        "name": "BALTHASAR-2",
+        "model": "lfm2.5-thinking:latest",
+        "tokens": 1317,
+        "time": 15.790839433670044,
+        "vote": "The current position aligns with the foundational principles of evidence-based stewardship.",
+        "opinion": "BALTHASAR REFINED ANALYSIS:  \nFrom an ethics-centered perspective, the advisors’ reliance on subjective interpretations or unverifiable claims undermines the foundational role of a moral guide. Melchi…"
+      },
+      {
+        "name": "CASPER-3",
+        "model": "lfm2.5-thinking:latest",
+        "tokens": 1189,
+        "time": 23.403013944625854,
+        "vote": "The current position aligns with the foundational principles of evidence-based stewardship.",
+        "opinion": "CASPER REFINED ANALYSIS:  \nThe other advisors’ arguments, while framed as pragmatic, rely on abstract idealism rather than empirical grounding. From a pragmatist lens, their dismissal of verifiable ev…"
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-02-20T06:09:02.487733",
+    "prompt": "使徒は、存在しますか",
+    "ruling": "Approval is granted under strict adherence to these principles.",
+    "telemetry": {
+      "total_tokens": 3697,
+      "total_time": 184.47212886810303,
+      "judge_model": "MAGI-HEAVY-CHAIN"
+    },
+    "advisors": [
+      {
+        "name": "MELCHIOR-1",
+        "model": "lfm2.5-thinking:latest",
+        "tokens": 1078,
+        "time": 25.763834238052368,
+        "vote": "DENY",
+        "opinion": "MELCHIOR REFINED ANALYSIS:  \nThe advisors’ claims falter under scrutiny. Balthasar’s assertion of unverified existence contradicts empirical standards, ignoring the necessity of evidence for scientifi…"
+      },
+      {
+        "name": "BALTHASAR-2",
+        "model": "lfm2.5-thinking:latest",
+        "tokens": 1539,
+        "time": 67.54134964942932,
+        "vote": "Approval is granted under strict adherence to these principles.",
+        "opinion": "BALTHASAR REFINED ANALYSIS:  \nThe other advisors’ viewpoints reveal tensions between dogma and empirical reality. Advisor 1’s insistence on unverified existence risks undermining the foundation of eth…"
+      },
+      {
+        "name": "CASPER-3",
+        "model": "lfm2.5-thinking:latest",
+        "tokens": 1080,
+        "time": 92.8894739151001,
+        "vote": "Approval is granted under strict adherence to these principles.",
+        "opinion": "CASPER REFINED ANALYSIS:  \nThe other advisors’ arguments, while rooted in pragmatism and ethics, overlook the critical tension between verification and practical application. MELCHIOR-1’s emphasis on…"
+      }
+    ]
+  }
+]

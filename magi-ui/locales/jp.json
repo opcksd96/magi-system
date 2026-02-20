@@ -1,0 +1,19 @@
+{
+  "system_status": "システムステータス",
+  "initializing": "初期化中...",
+  "waiting": "待機中",
+  "online": "オンライン",
+  "offline": "オフライン",
+  "processing": "審議中",
+  "execute": "実行",
+  "dismiss": "却下",
+  "passed": "可決",
+  "rejected": "否決",
+  "enter_query": "MAGIへの照会を入力してください...",
+  "decision_report": "決議報告書",
+  "main_ruling": "主文",
+  "reason": "理由",
+  "appendix": "付帯決議",
+  "telemetry_tkn": "トークン",
+  "telemetry_time": "時間"
+}

@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/src/styles.css" />
+    <link rel="stylesheet" href="/src/magi-projection.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MAGI SYSTEM - NERV HQ</title>
+    <script type="module" src="/src/main.ts" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="magi-logo">MAGI システム v2.0</div>
+      <div class="menu-bar">
+        <div class="menu-item">ファイル
+            <div class="dropdown">
+                <button id="menu-new">新規（ログ消去）</button>
+                <button id="menu-save">セッション保存</button>
+                <input type="file" id="menu-load-file" style="display:none">
+                <button onclick="document.getElementById('menu-load-file').click()">コンテキスト読込</button>
+                <button id="menu-close">終了</button>
+            </div>
+        </div>
+        <div class="menu-item">設定
+            <div class="dropdown">
+                <button id="menu-pref">環境設定 (TOML)</button>
+                <button id="menu-models">モデル構成 (YAML)</button>
+                <button id="menu-plugins">拡張機能・ツール</button>
+            </div>
+        </div>
+        <div class="menu-item">ヘルプ
+            <div class="dropdown">
+                <button id="menu-help">ドキュメント</button>
+                <button id="menu-version">バージョン情報</button>
+            </div>
+        </div>
+      </div>
+      <nav class="view-tabs">
+        <button class="tab-btn active" data-view="command-view" data-i18n="command">管制室</button>
+        <button class="tab-btn" data-view="projection-view" data-i18n="projection">発令所</button>
+      </nav>
+      <div style="flex: 1"></div>
+      <div class="status-box">
+        <span data-i18n="system_status">SYSTEM STATUS</span>: <span id="sys-status" data-i18n="initializing">INITIALIZING...</span> | <span id="telemetry-box" data-i18n="waiting">WAITING</span>
+      </div>
+    </header>
+
+    <!-- ─── COMMAND VIEW (Main Terminal) ─── -->
+    <div id="command-view" class="view-container">
+      <div id="busy-overlay" class="hidden">
+        <div class="busy-overlay-inner">
+          <div class="busy-scanner"></div>
+          <div class="busy-logo">MAGI</div>
+          <div class="busy-label">審議中</div>
+          <div class="busy-text">MAGI PROCURING...</div>
+          <div id="busy-phase-text" class="busy-phase">PHASE: INITIALIZING...</div>
+          <div class="busy-sublabel">SYSTEM_CORE_V2.0.4.LILITH</div>
+          <div class="busy-dots"><span></span><span></span><span></span></div>
+        </div>
+      </div>
+
+      <main>
+        <div class="command-center">
+          <div class="terminal-container">
+            <div class="terminal" id="terminal"></div>
+            <div id="decision-actions" class="hidden">
+                <button id="btn-copy-md">📄 MD複写</button>
+                <button id="btn-save-txt">💾 TXT保存</button>
+                <button id="btn-retry">🔄 再審議</button>
+            </div>
+          </div>
+          <div class="input-area">
+            <textarea id="magi-input" placeholder="ENTER QUERY FOR MAGI ANALYSIS..." rows="1"></textarea>
+            <button id="submit-btn" class="magi-btn">EXECUTE</button>
+          </div>
+        </div>
+
+        <div class="advisors">
+          <div class="advisor-hex" id="melchior">
+            <div class="advisor-name">MELCHIOR-1</div>
+            <div class="status-dot"></div>
+            <div style="font-size: 10px; margin-top: 5px">SCIENTIST</div>
+          </div>
+          <div class="advisor-hex" id="balthasar">
+            <div class="advisor-name">BALTHASAR-2</div>
+            <div class="status-dot"></div>
+            <div style="font-size: 10px; margin-top: 5px">MOTHER</div>
+          </div>
+          <div class="advisor-hex" id="casper">
+            <div class="advisor-name">CASPER-3</div>
+            <div class="status-dot"></div>
+            <div style="font-size: 10px; margin-top: 5px">WOMAN</div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <!-- ─── PROJECTION VIEW (Strategic Screen) ─── -->
+    <div id="projection-view" class="view-container hidden">
+      <div class="full-screen-projection">
+        <div class="magi-projection-container">
+            <div id="p-balthasar" class="magi-panel balthasar-2">
+                <span class="panel-name">BALTHASAR · 2</span>
+                <div class="p-stamp status-judging hidden"><span>審議中</span></div>
+            </div>
+            <div id="p-casper" class="magi-panel casper-3">
+                <span class="panel-name">CASPER · 3</span>
+                <div class="p-stamp status-judging hidden"><span>審議中</span></div>
+            </div>
+            <div id="p-melchior" class="magi-panel melchior-1">
+                <span class="panel-name">MELCHIOR · 1</span>
+                <div class="p-stamp status-judging hidden"><span>審議中</span></div>
+            </div>
+
+            <div class="status-card left">
+                <div class="card-title"><span>提訴</span></div>
+                <div class="card-details">
+                    <div class="detail-code" style="margin-bottom: 20px; font-size: 3.2rem;">CODE : 127</div>
+                    <div class="detail-summary">
+                        <div>FILE : <span class="highlight">MAGI_SYS</span></div>
+                        <div>EXTENSION : 4088 <span class="status-tag">[LOADED]</span></div>
+                        <div>EX_MODE : EXCLUSIVE</div>
+                        <div>PRIORITY : AAA</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="status-card right">
+                <div class="card-title"><span>決議</span></div>
+                <div class="card-details" id="p-result-details">
+                    <div class="detail-summary" id="p-summary-text"></div>
+                </div>
+            </div>
+            <div id="magi-stamp" class="magi-stamp status-judging hidden">
+                <span>審議中</span>
+            </div>
+            <div class="bridge-left connector"></div>
+            <div class="bridge-right connector"></div>
+            <div class="bridge-horizontal connector"></div>
+            <div class="magi-logo-hub"><span>MAGI</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ─── SETTINGS VIEW ─── -->
+    <div id="settings-view" class="view-container hidden">
+        <div class="settings-grid">
+            <section class="settings-section">
+                <h3>SYSTEM SETTINGS</h3>
+                <div class="setting-item">
+                    <label>Language</label>
+                    <select id="set-lang">
+                        <option value="en">English</option>
+                        <option value="jp">日本語</option>
+                    </select>
+                </div>
+            </section>
+        </div>
+        <div class="settings-footer">
+            <button id="save-settings-btn" class="magi-btn">APPLY CHANGES</button>
+        </div>
+    </div>
+
+    <!-- ─── GLOBAL OVERLAYS ─── -->
+    <div id="result-dialog" class="result-panel hidden">
+        <button id="close-modal" class="result-panel-close" title="Dismiss result view">X</button>
+        <div class="judgment-header">
+            <div class="judgment-court">NERV本部技術局　MAGI特別決議委員会</div>
+            <div class="judgment-date-row">
+                <span class="judgment-case-id">事件番号　MAGI-S-<span id="report-case-num">----</span></span>
+                <span id="report-timestamp" class="judgment-date"></span>
+            </div>
+            <div class="judgment-title-block">
+                <div class="judgment-title">決　　議</div>
+                <div id="modal-verdict" class="result-verdict"></div>
+            </div>
+        </div>
+        <div class="judgment-body" id="judgment-body">
+            <div class="judgment-section">
+                <div class="judgment-section-label">主　文</div>
+                <div class="judgment-section-content" id="j-shumon">本件申立を認める。</div>
+            </div>
+            <div class="judgment-section">
+                <div class="judgment-section-label">申立内容</div>
+                <div class="judgment-section-content" id="j-query">—</div>
+            </div>
+            <div class="judgment-section">
+                <div class="judgment-section-label">理　由</div>
+                <div class="judgment-section-content" id="j-reason">—</div>
+            </div>
+            <div class="judgment-section">
+                <div class="judgment-section-label">各審議官の意見</div>
+                <div class="judgment-section-content" id="j-advisors">—</div>
+            </div>
+            <div id="modal-stats" class="judgment-telemetry"></div>
+        </div>
+        <div class="judgment-footer">
+            <button id="btn-save-md">💾 保存</button>
+            <button id="btn-export-pdf">📄 印刷</button>
+            <button id="btn-copy-clip">📋 複写</button>
+            <button id="btn-to-prompt">⌨️ 再申立</button>
+            <button id="btn-retry">🔄 再審議</button>
+        </div>
+    </div>
+
+    <div id="version-dialog" class="modal hidden">
+        <div class="modal-content">
+            <h2>MAGI SYSTEM</h2>
+            <p>OS Version: 2.0.4-LILITH</p>
+            <div class="modal-footer">
+                <button id="close-version">CLOSE</button>
+            </div>
+        </div>
+    </div>
+
+  </body>
+</html>
