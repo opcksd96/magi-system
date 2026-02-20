@@ -3,17 +3,37 @@ __pycache__/
 *.py[cod]
 *$py.class
 venv/
+.venv/
+.cache/
+.pytest_cache/
+.ipynb_checkpoints/
+*.egg-info/
 .env
 *.log
 
-# Node
+# Node & Frontend
 node_modules/
 dist/
 .vite/
+.npm
+.yarn/
+playwright-report/
+test-results/
 
-# MAGI Specific
+# System & Ide
+.idea/
+.vscode/
+.DS_Store
+*.swp
+[Tt]humbs.db
+
+# MAGI Specific & Sensitive
 *.db
 results/
 brain/
 .gemini/
 scripts/secrets/
+.agent/
+.system_generated/
+uploads/
+temp/
